@@ -1,0 +1,466 @@
+[2019-09-22 15:22:34 +0700] [13700] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 60
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/vietvu/workspace/python/flask-log
+  daemon: True
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-error.log
+  loglevel: DEBUG
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x106a21e18>
+  on_reload: <function OnReload.on_reload at 0x106a21f28>
+  when_ready: <function WhenReady.when_ready at 0x106a350d0>
+  pre_fork: <function Prefork.pre_fork at 0x106a351e0>
+  post_fork: <function Postfork.post_fork at 0x106a352f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x106a35400>
+  worker_int: <function WorkerInt.worker_int at 0x106a35510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x106a35620>
+  pre_exec: <function PreExec.pre_exec at 0x106a35730>
+  pre_request: <function PreRequest.pre_request at 0x106a35840>
+  post_request: <function PostRequest.post_request at 0x106a358c8>
+  child_exit: <function ChildExit.child_exit at 0x106a359d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x106a35ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x106a35bf8>
+  on_exit: <function OnExit.on_exit at 0x106a35d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-09-22 15:22:34 +0700] [13700] [INFO] Starting gunicorn 19.9.0
+[2019-09-22 15:22:34 +0700] [13700] [DEBUG] Arbiter booted
+[2019-09-22 15:22:34 +0700] [13700] [INFO] Listening at: http://0.0.0.0:5000 (13700)
+[2019-09-22 15:22:34 +0700] [13700] [INFO] Using worker: sync
+[2019-09-22 15:22:34 +0700] [13723] [INFO] Booting worker with pid: 13723
+[2019-09-22 15:22:34 +0700] [13738] [INFO] Booting worker with pid: 13738
+[2019-09-22 15:22:34 +0700] [13756] [INFO] Booting worker with pid: 13756
+[2019-09-22 15:22:34 +0700] [13700] [DEBUG] 3 workers
+[2019-09-22 15:23:45,113] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:23:45,113] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:23:45,113] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:23:45,114] [INFO] [app] - index info
+[2019-09-22 15:23:45,114] [INFO] [app] - index info
+[2019-09-22 15:23:45,114] [INFO] [app] - index info
+[2019-09-22 15:23:45,115] [DEBUG] [app] - index debug
+[2019-09-22 15:23:45,115] [DEBUG] [app] - index debug
+[2019-09-22 15:23:45,115] [DEBUG] [app] - index debug
+[2019-09-22 15:23:45,115] [WARNING] [app] - index warn
+[2019-09-22 15:23:45,115] [WARNING] [app] - index warn
+[2019-09-22 15:23:45,115] [WARNING] [app] - index warn
+[2019-09-22 15:23:45,115] [ERROR] [app] - index error
+[2019-09-22 15:23:45,115] [ERROR] [app] - index error
+[2019-09-22 15:23:45,115] [ERROR] [app] - index error
+[2019-09-22 15:23:45,116] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:23:45,116] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:23:45,117] [INFO] [app] - index info
+[2019-09-22 15:23:45,117] [INFO] [app] - index info
+[2019-09-22 15:23:45,117] [DEBUG] [app] - index debug
+[2019-09-22 15:23:45,117] [DEBUG] [app] - index debug
+[2019-09-22 15:23:45,117] [WARNING] [app] - index warn
+[2019-09-22 15:23:45,117] [WARNING] [app] - index warn
+[2019-09-22 15:23:45,117] [ERROR] [app] - index error
+[2019-09-22 15:23:45,117] [ERROR] [app] - index error
+[2019-09-22 15:26:07 +0700] [14824] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 60
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/vietvu/workspace/python/flask-log
+  daemon: True
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-error.log
+  loglevel: DEBUG
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10c5a2e18>
+  on_reload: <function OnReload.on_reload at 0x10c5a2f28>
+  when_ready: <function WhenReady.when_ready at 0x10c5b60d0>
+  pre_fork: <function Prefork.pre_fork at 0x10c5b61e0>
+  post_fork: <function Postfork.post_fork at 0x10c5b62f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10c5b6400>
+  worker_int: <function WorkerInt.worker_int at 0x10c5b6510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10c5b6620>
+  pre_exec: <function PreExec.pre_exec at 0x10c5b6730>
+  pre_request: <function PreRequest.pre_request at 0x10c5b6840>
+  post_request: <function PostRequest.post_request at 0x10c5b68c8>
+  child_exit: <function ChildExit.child_exit at 0x10c5b69d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x10c5b6ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10c5b6bf8>
+  on_exit: <function OnExit.on_exit at 0x10c5b6d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-09-22 15:26:07 +0700] [14824] [INFO] Starting gunicorn 19.9.0
+[2019-09-22 15:26:07 +0700] [14824] [DEBUG] Arbiter booted
+[2019-09-22 15:26:07 +0700] [14824] [INFO] Listening at: http://0.0.0.0:5000 (14824)
+[2019-09-22 15:26:07 +0700] [14824] [INFO] Using worker: sync
+[2019-09-22 15:26:07 +0700] [14845] [INFO] Booting worker with pid: 14845
+[2019-09-22 15:26:07 +0700] [14873] [INFO] Booting worker with pid: 14873
+[2019-09-22 15:26:07 +0700] [14879] [INFO] Booting worker with pid: 14879
+[2019-09-22 15:26:07 +0700] [14824] [DEBUG] 3 workers
+[2019-09-22 15:26:11,366] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:11,366] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:11,366] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:11,367] [INFO] [app] - index info
+[2019-09-22 15:26:11,367] [INFO] [app] - index info
+[2019-09-22 15:26:11,367] [INFO] [app] - index info
+[2019-09-22 15:26:11,367] [DEBUG] [app] - index debug
+[2019-09-22 15:26:11,368] [DEBUG] [app] - index debug
+[2019-09-22 15:26:11,368] [DEBUG] [app] - index debug
+[2019-09-22 15:26:11,368] [WARNING] [app] - index warn
+[2019-09-22 15:26:11,368] [WARNING] [app] - index warn
+[2019-09-22 15:26:11,368] [WARNING] [app] - index warn
+[2019-09-22 15:26:11,368] [ERROR] [app] - index error
+[2019-09-22 15:26:11,368] [ERROR] [app] - index error
+[2019-09-22 15:26:11,368] [ERROR] [app] - index error
+[2019-09-22 15:26:11,370] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:11,370] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:11,371] [INFO] [app] - index info
+[2019-09-22 15:26:11,371] [INFO] [app] - index info
+[2019-09-22 15:26:11,371] [DEBUG] [app] - index debug
+[2019-09-22 15:26:11,371] [DEBUG] [app] - index debug
+[2019-09-22 15:26:11,371] [WARNING] [app] - index warn
+[2019-09-22 15:26:11,371] [WARNING] [app] - index warn
+[2019-09-22 15:26:11,371] [ERROR] [app] - index error
+[2019-09-22 15:26:11,371] [ERROR] [app] - index error
+[2019-09-22 15:26:36 +0700] [14991] [INFO] Booting worker with pid: 14991
+[2019-09-22 15:26:36,342] [INFO] [gunicorn.error] - Parent changed, shutting down: <Worker 14991>
+[2019-09-22 15:26:36,342] [INFO] [gunicorn.error] - Worker exiting (pid: 14991)
+[2019-09-22 15:26:36 +0700] [14995] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 60
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/vietvu/workspace/python/flask-log
+  daemon: True
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s" "%(T)s"
+  errorlog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-error.log
+  loglevel: DEBUG
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x108e9ae18>
+  on_reload: <function OnReload.on_reload at 0x108e9af28>
+  when_ready: <function WhenReady.when_ready at 0x108eae0d0>
+  pre_fork: <function Prefork.pre_fork at 0x108eae1e0>
+  post_fork: <function Postfork.post_fork at 0x108eae2f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x108eae400>
+  worker_int: <function WorkerInt.worker_int at 0x108eae510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x108eae620>
+  pre_exec: <function PreExec.pre_exec at 0x108eae730>
+  pre_request: <function PreRequest.pre_request at 0x108eae840>
+  post_request: <function PostRequest.post_request at 0x108eae8c8>
+  child_exit: <function ChildExit.child_exit at 0x108eae9d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x108eaeae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x108eaebf8>
+  on_exit: <function OnExit.on_exit at 0x108eaed08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-09-22 15:26:36 +0700] [14995] [INFO] Starting gunicorn 19.9.0
+[2019-09-22 15:26:36 +0700] [14995] [DEBUG] Arbiter booted
+[2019-09-22 15:26:36 +0700] [14995] [INFO] Listening at: http://0.0.0.0:5000 (14995)
+[2019-09-22 15:26:36 +0700] [14995] [INFO] Using worker: sync
+[2019-09-22 15:26:36 +0700] [15017] [INFO] Booting worker with pid: 15017
+[2019-09-22 15:26:36 +0700] [15047] [INFO] Booting worker with pid: 15047
+[2019-09-22 15:26:36 +0700] [15050] [INFO] Booting worker with pid: 15050
+[2019-09-22 15:26:36 +0700] [14995] [DEBUG] 3 workers
+[2019-09-22 15:26:45,177] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:45,177] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:45,177] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:45,178] [INFO] [app] - index info
+[2019-09-22 15:26:45,178] [INFO] [app] - index info
+[2019-09-22 15:26:45,178] [DEBUG] [app] - index debug
+[2019-09-22 15:26:45,178] [INFO] [app] - index info
+[2019-09-22 15:26:45,178] [DEBUG] [app] - index debug
+[2019-09-22 15:26:45,178] [WARNING] [app] - index warn
+[2019-09-22 15:26:45,178] [DEBUG] [app] - index debug
+[2019-09-22 15:26:45,178] [ERROR] [app] - index error
+[2019-09-22 15:26:45,178] [WARNING] [app] - index warn
+[2019-09-22 15:26:45,179] [WARNING] [app] - index warn
+[2019-09-22 15:26:45,179] [ERROR] [app] - index error
+[2019-09-22 15:26:45,179] [ERROR] [app] - index error
+[2019-09-22 15:26:45,180] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:45,180] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:45,180] [INFO] [app] - index info
+[2019-09-22 15:26:45,180] [DEBUG] [app] - index debug
+[2019-09-22 15:26:45,181] [INFO] [app] - index info
+[2019-09-22 15:26:45,181] [DEBUG] [app] - index debug
+[2019-09-22 15:26:45,181] [WARNING] [app] - index warn
+[2019-09-22 15:26:45,181] [WARNING] [app] - index warn
+[2019-09-22 15:26:45,181] [ERROR] [app] - index error
+[2019-09-22 15:26:45,181] [ERROR] [app] - index error
+[2019-09-22 15:26:56 +0700] [15162] [INFO] Booting worker with pid: 15162
+[2019-09-22 15:26:56,759] [INFO] [gunicorn.error] - Parent changed, shutting down: <Worker 15162>
+[2019-09-22 15:26:56,759] [INFO] [gunicorn.error] - Worker exiting (pid: 15162)
+[2019-09-22 15:26:57 +0700] [15165] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 60
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/vietvu/workspace/python/flask-log
+  daemon: True
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s" "%(L)s"
+  errorlog: /Users/vietvu/workspace/python/flask-log/logs/gunicorn-error.log
+  loglevel: DEBUG
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: app:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1082c7e18>
+  on_reload: <function OnReload.on_reload at 0x1082c7f28>
+  when_ready: <function WhenReady.when_ready at 0x1082dc0d0>
+  pre_fork: <function Prefork.pre_fork at 0x1082dc1e0>
+  post_fork: <function Postfork.post_fork at 0x1082dc2f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x1082dc400>
+  worker_int: <function WorkerInt.worker_int at 0x1082dc510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1082dc620>
+  pre_exec: <function PreExec.pre_exec at 0x1082dc730>
+  pre_request: <function PreRequest.pre_request at 0x1082dc840>
+  post_request: <function PostRequest.post_request at 0x1082dc8c8>
+  child_exit: <function ChildExit.child_exit at 0x1082dc9d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x1082dcae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1082dcbf8>
+  on_exit: <function OnExit.on_exit at 0x1082dcd08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-09-22 15:26:57 +0700] [15165] [INFO] Starting gunicorn 19.9.0
+[2019-09-22 15:26:57 +0700] [15165] [DEBUG] Arbiter booted
+[2019-09-22 15:26:57 +0700] [15165] [INFO] Listening at: http://0.0.0.0:5000 (15165)
+[2019-09-22 15:26:57 +0700] [15165] [INFO] Using worker: sync
+[2019-09-22 15:26:57 +0700] [15188] [INFO] Booting worker with pid: 15188
+[2019-09-22 15:26:57 +0700] [15220] [INFO] Booting worker with pid: 15220
+[2019-09-22 15:26:57 +0700] [15221] [INFO] Booting worker with pid: 15221
+[2019-09-22 15:26:57 +0700] [15165] [DEBUG] 3 workers
+[2019-09-22 15:26:59,936] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:59,936] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:59,936] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:59,936] [INFO] [app] - index info
+[2019-09-22 15:26:59,936] [INFO] [app] - index info
+[2019-09-22 15:26:59,937] [DEBUG] [app] - index debug
+[2019-09-22 15:26:59,936] [INFO] [app] - index info
+[2019-09-22 15:26:59,937] [DEBUG] [app] - index debug
+[2019-09-22 15:26:59,937] [WARNING] [app] - index warn
+[2019-09-22 15:26:59,937] [DEBUG] [app] - index debug
+[2019-09-22 15:26:59,937] [WARNING] [app] - index warn
+[2019-09-22 15:26:59,937] [WARNING] [app] - index warn
+[2019-09-22 15:26:59,937] [ERROR] [app] - index error
+[2019-09-22 15:26:59,937] [ERROR] [app] - index error
+[2019-09-22 15:26:59,937] [ERROR] [app] - index error
+[2019-09-22 15:26:59,938] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:59,938] [DEBUG] [gunicorn.error] - GET /
+[2019-09-22 15:26:59,939] [INFO] [app] - index info
+[2019-09-22 15:26:59,939] [INFO] [app] - index info
+[2019-09-22 15:26:59,939] [DEBUG] [app] - index debug
+[2019-09-22 15:26:59,939] [DEBUG] [app] - index debug
+[2019-09-22 15:26:59,939] [WARNING] [app] - index warn
+[2019-09-22 15:26:59,939] [WARNING] [app] - index warn
+[2019-09-22 15:26:59,939] [ERROR] [app] - index error
+[2019-09-22 15:26:59,940] [ERROR] [app] - index error
